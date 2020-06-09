@@ -17,8 +17,7 @@ class QuoteCard extends StatelessWidget {
               quote.text,
               style: TextStyle(
                 color: Colors.grey[800],
-                fontFamily: "GreatVibes",
-                fontSize: 18.0,
+                fontSize: 14.0,
               ),
             ),
             SizedBox(
@@ -26,9 +25,9 @@ class QuoteCard extends StatelessWidget {
             ),
             Text(quote.author,
                 style: TextStyle(
-                   fontFamily: "Lobster",
                   color: Colors.grey[600],
-                  fontSize: 14.0,
+                  fontFamily: 'Lobster',
+                  fontSize: 12.0,
                 )),
           ],
         ),

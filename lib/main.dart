@@ -36,7 +36,7 @@ class _DailyQuoteState extends State<DailyQuote> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Best Quotes Application"),
+        title: Text("Best Quotes Applications"),
         centerTitle: true,
         backgroundColor: Colors.blue[800],
       ),

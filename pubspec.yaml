@@ -59,11 +59,6 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
 fonts:
-  - family: GreatVibes
-    fonts:
-      - asset: fonts/GreatVibes-Regular.ttf
-        style: italic
-        
   - family: Lobster
     fonts:
       - asset: fonts/Lobster-Regular.ttf
