@@ -7,6 +7,9 @@ void main() {
     debugShowCheckedModeBanner: false,
     title: "List App",
     home: DailyQuote(),
+    theme: ThemeData(
+      fontFamily: "GreatVibes",
+    ),
   ));
 }
 

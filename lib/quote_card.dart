@@ -15,7 +15,11 @@ class QuoteCard extends StatelessWidget {
           children: <Widget>[
             Text(
               quote.text,
-              style: TextStyle(color: Colors.grey[800], fontSize: 18.0),
+              style: TextStyle(
+                color: Colors.grey[800],
+                fontFamily: "Lobster",
+                fontSize: 18.0,
+              ),
             ),
             SizedBox(
               height: 6.0,
