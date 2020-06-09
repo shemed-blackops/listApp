@@ -26,7 +26,7 @@ class QuoteCard extends StatelessWidget {
             Text(quote.author,
                 style: TextStyle(
                   color: Colors.grey[600],
-                  fontFamily: 'Lobster',
+                  fontFamily: 'Raleway',
                   fontSize: 12.0,
                 )),
           ],
