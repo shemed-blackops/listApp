@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'quote.dart';
+import 'quote_card.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -11,10 +12,10 @@ void main() {
 
 class DailyQuote extends StatefulWidget {
   @override
-  _DailyQuotetate createState() => _DailyQuotetate();
+  _DailyQuoteState createState() => _DailyQuoteState();
 }
 
-class _DailyQuotetate extends State<DailyQuote> {
+class _DailyQuoteState extends State<DailyQuote> {
   List<Quote> quotes = [
     Quote(
         author: "Daisy William",
@@ -29,40 +30,7 @@ class _DailyQuotetate extends State<DailyQuote> {
     Quote(
         author: "Daisy William",
         text: "Strive not to be a success, but rather to be of value."),
-    Quote(
-        author: "Daisy William",
-        text: "Strive not to be a success, but rather to be of value."),
-    Quote(
-        author: "Daisy William",
-        text: "Strive not to be a success, but rather to be of value."),
   ];
-
-  Widget quoteTemplate(quote) {
-    return Card(
-      margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
-      child: Padding(
-        padding: const EdgeInsets.all(12.0),
-        
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            Text(
-              quote.text,
-              style: TextStyle(color: Colors.grey[600], fontSize: 18.0),
-            ),
-            SizedBox(
-              height: 6.0,
-            ),
-            Text(quote.author,
-                style: TextStyle(
-                  color: Colors.grey[800],
-                  fontSize: 18.0,
-                )),
-          ],
-        ),
-      ),
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -75,9 +43,11 @@ class _DailyQuotetate extends State<DailyQuote> {
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
-          children: quotes.map((quote) => quoteTemplate(quote)).toList(),
+          children: quotes.map((quote) => QuoteCard(quote: quote,)).toList(),
         ),
       ),
     );
   }
 }
+
+
